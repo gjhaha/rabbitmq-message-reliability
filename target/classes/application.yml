@@ -1,0 +1,32 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: SpringAmqpTest
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /SpringAmqpTest
+
+
+order:
+  queue_name: direct.first
+  exchange_name: directExchange
+  routing_key_name: directKey1
+
+order1:
+  queue_name: direct.second
+  exchange_name: directSecondExchange
+  routing_key_name: directKey2
+
+redisson_operator:
+  error_key: errorInExchange
+  error_queue: errorInQueue
+
+dead_order:
+  dead_queue: queueDead
+  dead_exchange: exchangeDead
+  dead_routing_key: routingKeyDead
