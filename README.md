@@ -1,6 +1,7 @@
 ## 消息可靠性
 在我们平时开发的过程中往往会有使用到rabbitmq，通过rabbitmq进行消息的转发，可是消息在发送的过程中真的是**可靠**的吗？
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201017090423863.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxNzYyNTk0,size_16,color_FFFFFF,t_70#pic_center)
+
 由上图可以看到，消息从Producer到Consumer需要经过Broker，内部需要将消息先经过绑定的exchange，再根据exchange发送到指定的Queue，最后由Consumer从队列中获取到消息进行消费。
 
 如果需要保证消息的**尽量**不丢失，就得从这几个流程中下手。总的来说可以分为三个阶段的处理：
@@ -604,4 +605,4 @@ Consumer的消息确认机制通过设置**AcknowledgeMode** 来完成，一共�
 ## 总结
 以上粗浅的过了一遍rabbitmq的消息可靠性保证，能够在大几率的情况下防止消息的丢失，如果出现一些极端情况，消息的丢失还是无法避免。
 
-我们通过**入队列前**，**在队列中**，**出队列后**，三个阶段设置对消息的可靠性，尽量将消息设置在可控范围内。完整的代码已经上传至github。
+我们通过**入队列前**，**在队列中**，**出队列后**，三个阶段设置对消息的可靠性，尽量将消息设置在可控范围内。
