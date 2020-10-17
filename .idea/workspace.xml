@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +25,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1icmbj9wOS92P7o1cGHtkP0Kj6w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,7 +86,7 @@
       <workItem from="1602549221209" duration="18833000" />
       <workItem from="1602638566572" duration="7727000" />
       <workItem from="1602809646195" duration="17793000" />
-      <workItem from="1602896150989" duration="16725000" />
+      <workItem from="1602896150989" duration="17191000" />
     </task>
     <servers />
   </component>
